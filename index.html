@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cinefilo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="img/CINEFILOcentrado.png">
+</head>
+<header>
+   
+    <nav >
+           
+            <div class="nav-wrapper brown" style="z-index: 99">
+                    <img class="brand-logo" src="img/CINEFILO.png" style="height:45px;width:160px;margin:5px;">
+                <a class="sidenav-trigger" href="#"><i class="material-icons" onclick="instance.open()">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                            <li>
+                                <a href="#">Ranking de peliculas</a>
+                            </li>
+                            <li>
+                                <a href="#">Reseñas de peliculas</a>
+                            </li>
+                            <li>
+                                <a href="#">Acerca de</a>
+                            </li>
+                            <li>
+                                <a href="#">Dejanos un mensaje</a>
+                            </li>
+                            <li>
+                                <a href="#">Registrarse</a>
+                            </li>
+                
+                        </ul>
+        
+                </div>
+     
+
+    </nav>
+    <ul class="sidenav">
+            <li>
+                <a href="#">Ranking de peliculas</a>
+            </li>
+            <li>
+                <a href="#">Reseñas de peliculas</a>
+            </li>
+            <li>
+                <a href="#">Acerca de</a>
+            </li>
+            <li>
+                <a href="#">Dejanos un mensaje</a>
+            </li>
+            <li>
+                <a href="#">Registrarse</a>
+            </li>
+
+        </ul>
+
+</header>
+
+<body >
+    <div class="row">
+        <div class="col s12">
+
+            <div class=" fullscreen  slider" style="z-index: 0;">
+                <ul class="slides black">
+                    <li>
+                        <img src="img/4b8a92b93fc6b6a5a91175fdc7692d3c-700.jpg" style="opacity:0.5;">
+                        <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>Todo sobre el cine</h3>
+                            <h5 class="light grey-text text-lighten-3">Las mejores peliculas las encontraras aqui</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/bane-building-in-flames-wallpaper.jpg" style="opacity:0.5;">
+                        <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>Ranking preciso</h3>
+                            <h5 class="light grey-text text-lighten-3">Obtenemos informacion de los mejores criticos</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/iptrxid.jpg" style="opacity:0.5;">
+                        <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>Proximos estrenos</h3>
+                            <h5 class="light grey-text text-lighten-3">Sabemos las fechas exactas de lanzamiento de las nuevas peliculas</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/wp2177406.jpg" style="opacity:0.5;">
+                        <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>Siempre esta al tanto!</h3>
+                            <h5 class="light grey-text text-lighten-3">Puede enviarnos un mensaje dandonos sus sugerencias</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
+<script>
+     var instance;
+    document.addEventListener('DOMContentLoaded', function () {
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems);
+       instance = M.Sidenav.init(document.querySelectorAll('.sidenav'))[0];
+    });
+
+
+</script>
