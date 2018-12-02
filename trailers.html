@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+        <head>
+                <meta charset="utf-8" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <title>Cinefilo</title>
+                <!--El meta name='viewport' es aquella que se encarga de que en algunos dispositivos no se tenga que hacer zoom al presentar la pagina-->
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                     <!--se importa la hoja de estilos de materialize que es utilizada para el dise;o en general de la pagina
+                    ya que es un framework web para facilitar el desarrollo de las paginas web-->
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+                    <!--Se importa el js de materialize el cual contiene funciones las cuales son utilizadas para el manejo del framework\
+                    -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+                 <!--Se importan los iconos de google los cuales se utilizan para usar fuentes como iconos de vectores-->
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                <link href="css/estilos.css" rel="stylesheet">
+                <link rel="icon" href="img/CINEFILOcentrado.png">
+                <!--se importa la libreria de jquerry que es usada para animaciones etc-->
+                <script
+                src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+              
+            </head>
+            <header>
+                    <ul id="menusito" class="dropdown-content" style="z-index: 99;">
+                            <li><a href="ranking.html">Ranking de peliculas</a></li>
+                            <li><a href="galeria.html">Galeria de peliculas</a></li>
+                            <li><a href="trailers.html">Trailers de peliculas</a></li>
+                            <li><a href="detrasdecamaras.html">Detras de camaras</a></li>
+                          </ul>
+                <nav >
+                       
+            
+            
+                        <div class="nav-wrapper brown" style="z-index: 99">
+                                <img class="brand-logo" src="img/CINEFILO.png" style="height:45px;width:160px;margin:5px;" onclick="window.open('index.html','_self');">
+                            <a class="sidenav-trigger" href="#"><i class="material-icons" onclick="instance.open()">menu</i></a>
+                                <ul class="right hide-on-med-and-down">
+                                       <li> 
+                                           <a class="dropdown-trigger" href="#" data-target="menusito"  data-activates="menusito" data-beloworigin="true">Peliculas<i class="material-icons right">arrow_drop_down</i></a>
+                                       </li>
+                                        <li>
+                                            <a href="acercade.html">Acerca de</a>
+                                        </li>
+                                        <li>
+                                             <a href="Dedicatorias.html">Dedicatorias</a>
+                                        </li>
+                                        <li>
+                                            <a href="mensaje.html">Dejanos un mensaje</a>
+                                        </li>
+                                        <li>
+                                            <a href="registrarse.html">Registrarse</a>
+                                        </li>
+                            
+                                    </ul>
+                    
+                            </div>
+                 
+            
+                </nav>
+                <ul class="sidenav">
+                        <li><a href="ranking.html">Ranking de peliculas</a></li>
+                        <li><a href="galeria.html">Galeria de peliculas</a></li>
+                        <li><a href="trailers.html">Trailers de peliculas</a></li>
+                        <li><a href="detrasdecamaras.html">Detras de camaras</a></li>
+                        <li>
+                                <a href="acercade.html">Acerca de</a>
+                            </li>
+                            <li>
+                                 <a href="Dedicatorias.html">Dedicatorias</a>
+                            </li>
+                            <li>
+                                <a href="mensaje.html">Dejanos un mensaje</a>
+                            </li>
+                            <li>
+                                <a href="registrarse.html">Registrarse</a>
+                            </li>
+            
+                    </ul>
+            
+            </header>
+            
+<!--El atributo onload ejecuta siempre un metodo al cargar el elemento que contenga a este.
+en este caso llama a un metodo que se encuentra en loads.js el cual es un archivo que use para 
+encapsular todas las acciones a realizarse al cargar cada pagina
+-->
+<body onload="loadtrailers()">
+   
+<div >
+    <h4 class="center-align">Trailers de peliculas</h4>
+    <div class="row" id="contenedoritems">
+      
+        
+
+    </div>
+
+    
+
+</div>
+
+
+
+</body>
+<footer id="Pie" class="page-footer brown">
+    <div class="footer-copyright container brown">
+            <h6>HTML, Multimedia 2018</h6>
+            <p>Santo Domingo, Derechos Reservados</p>
+
+    </div>    
+</footer>
+</html>
+<!--trailers.js es un archivo de javascript que contiene todos los datos que se generaran almacenados en una variable llamado datos
+para que asi el contenido sea mas sencillo de manipular
+-->
+<script src="data/trailers.js"></script>
+<!--navegaciones.js es un archivo de javascript que se encarga de cargar todos los componentes de materialize referentes a la parte de
+    la barra de navegacion
+-->
+<script src="js/navegaciones.js"></script>
+<!--Loads.js es un archivo de javascript encargado de tener el metodo utilizado 
+    para ejecutar al cargar la pagina previamente declarada-->
+<script src="js/loads.js"></script>

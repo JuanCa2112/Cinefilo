@@ -84,63 +84,33 @@
     </header>
     
             
-<!--El atributo onload ejecuta siempre un metodo al cargar el elemento que contenga a este.
-en este caso llama a un metodo que se encuentra en loads.js el cual es un archivo que use para 
-encapsular todas las acciones a realizarse al cargar cada pagina
--->
-<body onload="loadindex()" >
-    <div class="row">
-        <div class="col s12">
 
-            <div class=" fullscreen  slider" style="z-index: 0;">
-                <ul class="slides black">
-                    <li>
-                        <img src="img/4b8a92b93fc6b6a5a91175fdc7692d3c-700.jpg" style="opacity:0.5;">
-                        <!-- random image -->
-                        <div class="caption center-align">
-                            <h3>Todo sobre el cine</h3>
-                            <h5 class="light grey-text text-lighten-3">Las mejores peliculas las encontraras aqui</h5>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/bane-building-in-flames-wallpaper.jpg" style="opacity:0.5;">
-                        <!-- random image -->
-                        <div class="caption center-align">
-                            <h3>Ranking preciso</h3>
-                            <h5 class="light grey-text text-lighten-3">Obtenemos informacion de los mejores criticos</h5>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/iptrxid.jpg" style="opacity:0.5;">
-                        <!-- random image -->
-                        <div class="caption center-align">
-                            <h3>Proximos estrenos</h3>
-                            <h5 class="light grey-text text-lighten-3">Sabemos las fechas exactas de lanzamiento de las nuevas peliculas</h5>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/wp2177406.jpg" style="opacity:0.5;">
-                        <!-- random image -->
-                        <div class="caption center-align">
-                            <h3>Siempre esta al tanto!</h3>
-                            <h5 class="light grey-text text-lighten-3">Puede enviarnos un mensaje dandonos sus sugerencias</h5>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+<body onload="loadregistro()">
+ 
+<div class="container">
+        <h4 class="center-align">Registrarse</h4>
+   <form style="margin-top:10%;margin-bottom:10%;">
 
-
-        </div>
-
-
-
-    </div>
-
-
+     <!--Campos te dexto -->
+   <input type="text" class="text-field" placeholder="Su nombre" id="campo1">
+   <input type="text" class="text-field" placeholder="Su apellido" id="campo2">
+   <input type="email" class="text-field" placeholder="Su Correo" id="campo3">
+   <input type="password" class="text-field" placeholder="Su contraseña" id="campo4">
+   <input type="password" class="text-field" placeholder="Repita su contraseña" id="campo5">
+    <!--el evennto onclick ejecutara lo indicado en js -->
+    <a class="btn black" style="width:100%;" id="boton1" onclick="verificarymandar()">Registrarse</a>
+   </form>
+</div>
 
 
 </body>
+<footer id="Pie" class="page-footer brown">
+    <div class="footer-copyright container brown">
+            <h6>HTML, Multimedia 2018</h6>
+            <p>Santo Domingo, Derechos Reservados</p>
 
+    </div>    
+</footer>
 </html>
 <!--navegaciones.js es un archivo de javascript que se encarga de cargar todos los componentes de materialize referentes a la parte de
     la barra de navegacion
@@ -149,3 +119,6 @@ encapsular todas las acciones a realizarse al cargar cada pagina
 <!--Loads.js es un archivo de javascript encargado de tener el metodo utilizado 
     para ejecutar al cargar la pagina previamente declarada-->
 <script src="js/loads.js"></script>
+<!--Verificarregistrarse.js es un archivo de javascript encargado de tener los metodos utilizados para
+     ejecutar una comprobacion de los campos y asi lanzar una mensaje que diga su validez-->
+<script src="js/verificarregistrarse.js"> </script>
